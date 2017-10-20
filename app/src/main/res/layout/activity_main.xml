@@ -2,37 +2,109 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp">
 
-    <Button
-        android:id="@+id/synthButton"
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="选择声音:"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#30666666"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="男声"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/male2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男声2"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/male3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男主播"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女声"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="童声"
+                android:textSize="12dp" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:text="离在线语音合成"
-        android:textSize="16sp" />
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#CCCCCC"
+        android:hint="请输入要播报文字"
+        android:maxEms="100"
+        android:minLines="5"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp" />
 
-    <Button
-        android:id="@+id/saveTtsFileButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:text="保存合成后的音频"
-        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
 
-    <Button
-        android:id="@+id/miniButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:text="精简版合成"
-        android:textSize="16sp" />
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放" />
+
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停" />
+
+    </LinearLayout>
 
 
 </LinearLayout>
