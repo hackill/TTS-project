@@ -38,12 +38,6 @@
                 android:text="男声"
                 android:textSize="12dp" />
 
-            <RadioButton
-                android:id="@+id/male2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="男声2"
-                android:textSize="12dp" />
 
             <RadioButton
                 android:id="@+id/male3"
@@ -102,7 +96,7 @@
             android:id="@+id/stop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="暂停" />
+            android:text="停止" />
 
     </LinearLayout>
 
